@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Actividad1b">
+
+    // Etiqueta contador
+    <TextView android:text="@string/string_pulsaciones" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+    // Creación del botón
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Presionar"
+        android:id="@+id/btCont"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:onClick="contador" />
+
+    // Etiqueta pulsaciones
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Número de pulsaciones"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/btCont"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:contextClickable="true" />
+
+    // Texto contador
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/textocontador"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

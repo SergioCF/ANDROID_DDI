@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Actividad1b</string>
+    <string name="string_pulsaciones">Contador de pulsaciones</string>
+    <string name="action_settings">Settings</string>
+</resources>
